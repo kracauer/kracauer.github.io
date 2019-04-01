@@ -1,5 +1,5 @@
 ---
 title: Achievements
-subtitle: Here you'll find all the ways to get in touch with me
+subtitle: I'll show you my achievments at 'codecademy'
 ---
 # Achievements
