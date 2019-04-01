@@ -2,7 +2,8 @@
 title: Achievements
 subtitle: I'll show you my achievments at codecademy
 ---
-# Achievements
+# A minor achievement on [codecademy](https://www.codecademy.com)
+
 
 <img src="/img/learned_git.png" />
 
