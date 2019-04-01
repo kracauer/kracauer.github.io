@@ -25,9 +25,9 @@ description: Everything between Kraków & Kracauer
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
+    - The Writer: "https://pl.wikipedia.org/wiki/Siegfried_Kracauer/"
+    - The Mountaineer: "https://en.wikipedia.org/wiki/Jon_Krakauer"
+    - The Sausages: "https://en.wikipedia.org/wiki/Krakowska"
   Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
