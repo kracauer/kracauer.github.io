@@ -1,4 +1,4 @@
-<h2 id="introduction">Modeling: A Study in Words and Meanings" by Willard McCarty</h2>
+<h1 id="introduction">Modeling: A Study in Words and Meanings" by Willard McCarty</h1>
 
 <blockquote>
 <blockquote>
