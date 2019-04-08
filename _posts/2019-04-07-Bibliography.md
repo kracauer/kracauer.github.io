@@ -1,7 +1,7 @@
 <head>
-    <title>SELFHTML: Seitentitel</title>
+    <h1 id="introduction">Modeling: A Study in Words and Meanings" by Willard McCarty</h1>
 </head>
-<h1 id="introduction">Modeling: A Study in Words and Meanings" by Willard McCarty</h1>
+
 
 <blockquote>
 <blockquote>
