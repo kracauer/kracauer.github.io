@@ -1,7 +1,7 @@
 <head>
     <h1 id="introduction">Modeling: A Study in Words and Meanings" by Willard McCarty</h1>
 </head>
-
+ p { margin-top: 3em; }
 
 <blockquote>
 <blockquote>
