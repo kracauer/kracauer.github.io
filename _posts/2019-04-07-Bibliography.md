@@ -1,3 +1,6 @@
+<head>
+    <title>SELFHTML: Seitentitel</title>
+</head>
 <h1 id="introduction">Modeling: A Study in Words and Meanings" by Willard McCarty</h1>
 
 <blockquote>
