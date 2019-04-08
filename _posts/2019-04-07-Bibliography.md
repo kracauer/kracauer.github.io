@@ -2,7 +2,7 @@
     <h1 id="introduction">Modeling: A Study in Words and Meanings" by Willard McCarty</h1>
 </head>
 <style>
- h1 { line-height="10"; font-size:"3"; }
+
 </style>
 <blockquote>
 <blockquote>
