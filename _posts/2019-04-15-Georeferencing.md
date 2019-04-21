@@ -8,7 +8,7 @@ Two historical maps of the USA, georeferenced with QGIS and each equipped with t
 
 
 ## **"Virginia" (nowadays State of Virginia and State of West Virginia) by Sidney E. Morse ca. 1842-1845** [(Source: New York Library)](https://digitalcollections.nypl.org/items/510d47da-f245-a3d9-e040-e00a18064a99)
-
+<img src="/img/virginia_map_georeferenced.png" />
 
 City | State | lon | lat | lon1 | lat1
 --- | --- | --- | --- | --- | ---
