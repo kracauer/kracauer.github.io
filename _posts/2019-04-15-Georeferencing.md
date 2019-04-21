@@ -4,10 +4,10 @@ Two historical maps of the USA, georeferenced with QGIS and each equipped with t
 - [x] Task2
 - [ ] Task3
 
-**"The United States of North America"by John Johnstone ca. 1843-1861 (?)** [(Source: New York Library)](https://digitalcollections.nypl.org/items/510d47da-ee71-a3d9-e040-e00a18064a99)
+ ## **"The United States of North America" by John Johnstone ca. 1843-1861 (?)** [(Source: New York Library)](https://digitalcollections.nypl.org/items/510d47da-ee71-a3d9-e040-e00a18064a99)
 
 
-**"Virginia" (nowadays State of Virginia and State of West Virginia) by Sidney E. Morse ca. 1842-1845** [(Source: New York Library)](https://digitalcollections.nypl.org/items/510d47da-f245-a3d9-e040-e00a18064a99)
+## **"Virginia" (nowadays State of Virginia and State of West Virginia) by Sidney E. Morse ca. 1842-1845** [(Source: New York Library)](https://digitalcollections.nypl.org/items/510d47da-f245-a3d9-e040-e00a18064a99)
 
 
 City | State | lon | lat | lon1 | lat1
