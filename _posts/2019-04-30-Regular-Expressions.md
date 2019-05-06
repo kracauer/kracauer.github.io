@@ -11,6 +11,14 @@ Dataset: `“eat”, “eats”, “ate”, “eaten”, “eating”, “eater�
 Solution: `[ea]t?r?s?y?i?n?g?`
 
 ## 1.2 Find all Qadhdhafis...<br>
+Dataset: `Maummar Gaddafi, Moamar AI Kadafi, Moamar al-Gaddafi,
+	Moamar el Gaddafi, Moamar El Kadhafi, Moamar Gaddafi,
+	Moamar Gadhafi, Moamer El Kazzafi, Moamer Gaddafi,
+	Moamer Kadhafi, Moamma Gaddafi, Moammar el Gadhafi,
+	Moammar El Kadhafi, Mo'ammar el-Gadhafi, Moammar Gaddafi,
+	Moammar Gadhafi, Mo'ammar Gadhafi, Moammar Ghadafi,
+	Moammar Kadhafi, Moammar Khadaffy, Moammar Khadafy` <br>
+
 Solution:`\bM[oau']+m+[ae]r? ([aelAIE]+)?[- ]?[GK][h]?a[dhz]+af+[iy]\b`
 
 ## 1.3 Find all variations of Iṣbahān (construct the shortest possible regular expression)<br>
@@ -19,7 +27,7 @@ Dataset: `Iṣbahān, Iṣfahān, Isbahan,
 	Esfahan, Hispahan,
 	iṣbahān, iṣfahān, isbahan,
 	isfahan, esfāhān, esfahān,
-	esfahan, hispahan,`
+	esfahan, hispahan,` <br>
 Solution: ???
 
 # Part 2
@@ -44,9 +52,9 @@ Dataset: `Askin, Leon
 	Schwarzenegger, Arnold
 	Waltz, Christoph
 	Werner, Oskar
-	Vader, Darth`
+	Vader, Darth` <br>
 
-Solution: Find `\t(\w+), (\w+)?\n`
+Solution: Find `\t(\w+), (\w+)?\n` <br>
 	Replace: ????
  
 
@@ -66,12 +74,12 @@ Dataset: `Major cities in Austria are as follows: Vienna, Graz, Linz,
 	Bad Vöslau, Waidhofen, Knittelfeld, Trofaiach, Mistelbach,	
 	Zwettl, Völkermarkt, Götzis, Sankt Johann im Pongau,
 	Gänserndorf, Gerasdorf bei Wien, Ebreichsdorf, Bischofshofen,
-	Groß-Enzersdorf, Seekirchen am Wallersee, Sankt Andrä`
+	Groß-Enzersdorf, Seekirchen am Wallersee, Sankt Andrä` <br>
 
 Solution: ???
 
 ## 2.3 More Difficult: Construct regular expression that finds only cities from 1) Lower Austria; 2) Salzburg. <br>
 Solution: Find: `([\w -]+) \(Lower Austria\)\b`  OR <br>
-`\b([\w -]+) \(Lower Austria\)\b` + Salzburg ???
+`\b([\w -]+) \(Lower Austria\)\b` + Salzburg ??? <br>
 Replace: ???
 
