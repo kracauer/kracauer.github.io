@@ -4,13 +4,13 @@ subtitle: Homework // L06 Regular Expressions
 ---
 Below you will find a data set and corresponding expressions, written with regular expressions, which can uniquely find the respective data sets.
 
-# Part 1
+## Part 1
 
-## 1.1 What regular expression matches each of the following?<br>
+### 1.1 What regular expression matches each of the following?<br>
 Dataset: `“eat”, “eats”, “ate”, “eaten”, “eating”, “eater”, “eatery”`
 Solution: `[ea]t?r?s?y?i?n?g?`
 
-## 1.2 Find all Qadhdhafis...<br>
+### 1.2 Find all Qadhdhafis...<br>
 Dataset: `Maummar Gaddafi, Moamar AI Kadafi, Moamar al-Gaddafi,
 	Moamar el Gaddafi, Moamar El Kadhafi, Moamar Gaddafi,
 	Moamar Gadhafi, Moamer El Kazzafi, Moamer Gaddafi,
@@ -21,7 +21,7 @@ Dataset: `Maummar Gaddafi, Moamar AI Kadafi, Moamar al-Gaddafi,
 
 Solution:`\bM[oau']+m+[ae]r? ([aelAIE]+)?[- ]?[GK][h]?a[dhz]+af+[iy]\b`
 
-## 1.3 Find all variations of Iṣbahān (construct the shortest possible regular expression)<br>
+### 1.3 Find all variations of Iṣbahān (construct the shortest possible regular expression)<br>
 Dataset: `Iṣbahān, Iṣfahān, Isbahan,
 	Isfahan, Esfāhān, Esfahān,
 	Esfahan, Hispahan,
@@ -30,9 +30,9 @@ Dataset: `Iṣbahān, Iṣfahān, Isbahan,
 	esfahan, hispahan,` <br>
 Solution: ???
 
-# Part 2
+## Part 2
 
-## 2.1 Conversion: Convert “Askin, Leon” > “Leon Askin” <br>
+### 2.1 Conversion: Convert “Askin, Leon” > “Leon Askin” <br>
 Dataset: `Askin, Leon
 	Berger, Helmut
 	Berger, Senta
@@ -58,7 +58,7 @@ Solution: Find `\t(\w+), (\w+)?\n` <br>
 	Replace: ????
  
 
-## 2.2 Simple: Construct regular expressions that finds references all Austrian cities. <br>
+### 2.2 Simple: Construct regular expressions that finds references all Austrian cities. <br>
 Dataset: `Major cities in Austria are as follows: Vienna, Graz, Linz,
 	Salzburg, Innsbruck, Klagenfurt, Villach, Wels, Sankt Pölten,
 	Dornbirn, Wiener Neustadt, Steyr, Feldkirch, Bregenz, Leonding,
@@ -78,7 +78,7 @@ Dataset: `Major cities in Austria are as follows: Vienna, Graz, Linz,
 
 Solution: ???
 
-## 2.3 More Difficult: Construct regular expression that finds only cities from 1) Lower Austria; 2) Salzburg. <br>
+### 2.3 More Difficult: Construct regular expression that finds only cities from 1) Lower Austria; 2) Salzburg. <br>
 Solution: Find: `([\w -]+) \(Lower Austria\)\b`  OR <br>
 `\b([\w -]+) \(Lower Austria\)\b` + Salzburg ??? <br>
 Replace: ???
