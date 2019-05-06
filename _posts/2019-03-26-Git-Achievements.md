@@ -1,6 +1,6 @@
 ---
 title: Git Achievements
-subtitle: I'll show you my achievments at codecademy
+subtitle: Homework: L04 Citation management and academic writing II
 ---
 # A minor achievement on [codecademy](https://www.codecademy.com)
 
