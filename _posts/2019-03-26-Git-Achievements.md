@@ -1,6 +1,6 @@
 ---
 title: Git Achievements
-subtitle: Homework // L04 Citation management and academic writing II
+subtitle: Homework // L03 Version Control and Collaboration
 ---
 # A minor achievement on [codecademy](https://www.codecademy.com)
 
