@@ -7,11 +7,11 @@ Below you will find a data set and corresponding expressions, written with regul
 ## Part 1
 
 ### 1.1 What regular expression matches each of the following?<br>
-Dataset: `“eat”, “eats”, “ate”, “eaten”, “eating”, “eater”, “eatery”`<br>
+Data set: `“eat”, “eats”, “ate”, “eaten”, “eating”, “eater”, “eatery”`<br>
 Solution: `[ea]t?r?s?y?i?n?g?`
 
 ### 1.2 Find all Qadhdhafis...<br>
-Dataset: `Maummar Gaddafi, Moamar AI Kadafi, Moamar al-Gaddafi,
+Data set: `Maummar Gaddafi, Moamar AI Kadafi, Moamar al-Gaddafi,
 	Moamar el Gaddafi, Moamar El Kadhafi, Moamar Gaddafi,
 	Moamar Gadhafi, Moamer El Kazzafi, Moamer Gaddafi,
 	Moamer Kadhafi, Moamma Gaddafi, Moammar el Gadhafi,
@@ -22,7 +22,7 @@ Dataset: `Maummar Gaddafi, Moamar AI Kadafi, Moamar al-Gaddafi,
 Solution:`\bM[oau']+m+[ae]r? ([aelAIE]+)?[- ]?[GK][h]?a[dhz]+af+[iy]\b`
 
 ### 1.3 Find all variations of Iṣbahān (construct the shortest possible regular expression)<br>
-Dataset: `Iṣbahān, Iṣfahān, Isbahan,
+Data set: `Iṣbahān, Iṣfahān, Isbahan,
 	Isfahan, Esfāhān, Esfahān,
 	Esfahan, Hispahan,
 	iṣbahān, iṣfahān, isbahan,
@@ -34,7 +34,7 @@ Solution: ???
 ## Part 2
 
 ### 2.1 Conversion: Convert “Askin, Leon” > “Leon Askin” <br>
-Dataset: `Askin, Leon
+Data set: `Askin, Leon
 	Berger, Helmut
 	Berger, Senta
 	Gold, Käthe
@@ -56,12 +56,12 @@ Dataset: `Askin, Leon
 	Vader, Darth` <br>
 
 Solution: <br>
-Find `\t(\w+), (\w+)?\n` <br>
+Find: `\t(\w+), (\w+)?\n` <br>
 	Replace: ????
  
 
 ### 2.2 Simple: Construct regular expressions that finds references all Austrian cities. <br>
-Dataset: `Major cities in Austria are as follows: Vienna, Graz, Linz,
+Data set: `Major cities in Austria are as follows: Vienna, Graz, Linz,
 	Salzburg, Innsbruck, Klagenfurt, Villach, Wels, Sankt Pölten,
 	Dornbirn, Wiener Neustadt, Steyr, Feldkirch, Bregenz, Leonding,
 	Klosterneuburg, Baden bei Wien, Wolfsberg, Leoben, Krems, Traun,
@@ -81,6 +81,44 @@ Dataset: `Major cities in Austria are as follows: Vienna, Graz, Linz,
 Solution: ???
 
 ### 2.3 More Difficult: Construct regular expression that finds only cities from 1) Lower Austria; 2) Salzburg. <br>
+Data set: `Vienna (Vienna), Graz (Styria), Linz (Upper Austria),
+	Salzburg (Salzburg), Innsbruck (Tyrol), Klagenfurt (Carinthia),
+	Villach (Carinthia), Wels (Upper Austria),
+	Sankt Pölten (Lower Austria), Dornbirn (Vorarlberg),
+	Wiener Neustadt (Lower Austria), Steyr (Upper Austria),
+	Feldkirch (Vorarlberg), Bregenz (Vorarlberg),
+	Leonding (Upper Austria), Klosterneuburg (Lower Austria),
+	Baden bei Wien (Lower Austria), Wolfsberg (Carinthia),
+	Leoben (Styria), Krems (Lower Austria), Traun (Upper Austria),
+	Amstetten (Lower Austria), Lustenau (Vorarlberg),
+	Kapfenberg (Styria), Mödling (Lower Austria),
+	Hallein (Salzburg), Kufstein (Tyrol),
+	Traiskirchen (Lower Austria), Schwechat (Lower Austria),
+	Braunau am Inn (Upper Austria), Stockerau (Lower Austria),
+	Saalfelden (Salzburg), Ansfelden (Upper Austria),
+	Tulln (Lower Austria), Hohenems (Vorarlberg),
+	Spittal an der Drau (Carinthia), Telfs (Tyrol),
+	Ternitz (Lower Austria), Perchtoldsdorf (Lower Austria),
+	Feldkirchen (Carinthia), Bludenz (Vorarlberg),
+	Bad Ischl (Upper Austria), Eisenstadt (Burgenland),
+	Schwaz (Tyrol), Hall in Tirol (Tyrol), Gmunden (Upper Austria),
+	Wörgl (Tyrol), Wals-Siezenheim (Salzburg),
+	Marchtrenk (Upper Austria), Bruck an der Mur (Styria),
+	Sankt Veit an der Glan (Carinthia), Korneuburg (Lower Austria),
+	Neunkirchen (Lower Austria), Hard (Vorarlberg),
+	Vöcklabruck (Upper Austria), Lienz (Tyrol),
+	Rankweil (Vorarlberg), Hollabrunn (Lower Austria),
+	Enns (Upper Austria), Brunn am Gebirge (Lower Austria),
+	Ried im Innkreis (Upper Austria), Bad Vöslau (Lower Austria),
+	Waidhofen (Lower Austria), Knittelfeld (Styria),
+	Trofaiach (Styria), Mistelbach (Lower Austria),
+	Zwettl (Lower Austria), Völkermarkt (Carinthia),
+	Götzis (Vorarlberg), Sankt Johann im Pongau (Salzburg),
+	Gänserndorf (Lower Austria), Gerasdorf bei Wien (Lower Austria),
+	Ebreichsdorf (Lower Austria), Bischofshofen (Salzburg),
+	Groß-Enzersdorf (Lower Austria),
+	Seekirchen am Wallersee (Salzburg), Sankt Andrä (Carinthia)`
+
 Solution: <br>
 Find: `([\w -]+) \(Lower Austria\)\b`  OR <br>
 `\b([\w -]+) \(Lower Austria\)\b` + Salzburg ??? <br>
