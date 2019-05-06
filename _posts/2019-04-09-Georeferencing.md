@@ -3,7 +3,7 @@ Two historical maps of the USA, georeferenced with [QGIS](https://www.qgis.org/e
 ### "The United States of North America" by John Johnstone ca. 1843-1861 (?) [(Source: New York Library)](https://digitalcollections.nypl.org/items/510d47da-ee71-a3d9-e040-e00a18064a99)
 <img src="/img/US_map_georeferenced_100.png" />
 
-| City         | State          | lon           | lat         | lon1          | lat1        |
+| City         | State          | Longitude 1   | Latitude 1  | Longitude 2   | Latitude 2  |
 |--------------|----------------|---------------|-------------|---------------|-------------|
 | New York     | New York       | -8234229.297  | 4970380.761 | -8234229.297  | 4970380.761 |
 | Philadelphia | Pennsylvania   | -8368867.370  | 4858182.367 | -8368867.370  | 4858182.367 |
@@ -29,7 +29,7 @@ Two historical maps of the USA, georeferenced with [QGIS](https://www.qgis.org/e
 ### "Virginia" (nowadays State of Virginia and State of West Virginia) by Sidney E. Morse ca. 1842-1845 [(Source: New York Library)](https://digitalcollections.nypl.org/items/510d47da-f245-a3d9-e040-e00a18064a99)
 <img src="/img/virginia_map_georeferenced_100.png" />
 
-| City            | State    | lon          | lat         | lon1         | lat1        |
+| City            | State    | Longitude 1  | Latitude 1  | Longitude 2  | Latitude 2  |
 |-----------------|----------|--------------|-------------|--------------|-------------|
 | Richmond        | Virginia | -8620210.104 | 4515550.210 | -8620210.104 | 4515550.210 |
 | Washington D.C. | Columbia | -8575609.566 | 4708130.094 | -8575609.566 | 4708130.094 |
