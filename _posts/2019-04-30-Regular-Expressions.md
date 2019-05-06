@@ -7,7 +7,7 @@ Below you will find a data set and corresponding expressions, written with regul
 ## Part 1
 
 ### 1.1 What regular expression matches each of the following?<br>
-Dataset: `“eat”, “eats”, “ate”, “eaten”, “eating”, “eater”, “eatery”`
+Dataset: `“eat”, “eats”, “ate”, “eaten”, “eating”, “eater”, “eatery”`<br>
 Solution: `[ea]t?r?s?y?i?n?g?`
 
 ### 1.2 Find all Qadhdhafis...<br>
