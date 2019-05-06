@@ -28,6 +28,7 @@ Dataset: `Iṣbahān, Iṣfahān, Isbahan,
 	iṣbahān, iṣfahān, isbahan,
 	isfahan, esfāhān, esfahān,
 	esfahan, hispahan,` <br>
+
 Solution: ???
 
 ## Part 2
@@ -54,7 +55,8 @@ Dataset: `Askin, Leon
 	Werner, Oskar
 	Vader, Darth` <br>
 
-Solution: Find `\t(\w+), (\w+)?\n` <br>
+Solution: <br>
+Find `\t(\w+), (\w+)?\n` <br>
 	Replace: ????
  
 
@@ -79,7 +81,8 @@ Dataset: `Major cities in Austria are as follows: Vienna, Graz, Linz,
 Solution: ???
 
 ### 2.3 More Difficult: Construct regular expression that finds only cities from 1) Lower Austria; 2) Salzburg. <br>
-Solution: Find: `([\w -]+) \(Lower Austria\)\b`  OR <br>
+Solution: <br>
+Find: `([\w -]+) \(Lower Austria\)\b`  OR <br>
 `\b([\w -]+) \(Lower Austria\)\b` + Salzburg ??? <br>
 Replace: ???
 
