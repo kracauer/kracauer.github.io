@@ -121,6 +121,6 @@ Data set: `Vienna (Vienna), Graz (Styria), Linz (Upper Austria),
 
 Solution: <br>
 Find: `([\w -]+) \(Lower Austria\)\b`  OR <br>
-`\b([\w -]+) \(Lower Austria\)\b` + Salzburg ??? <br>
-Replace: ???
+`\b([\w -]+) \(Salzburg\)`
+
 
