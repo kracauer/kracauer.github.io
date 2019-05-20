@@ -29,7 +29,7 @@ Data set: `Iṣbahān, Iṣfahān, Isbahan,
 	isfahan, esfāhān, esfahān,
 	esfahan, hispahan,` <br>
 
-Solution: ´\b()\b´
+Solution: `\b()\b`
 
 ## Part 2
 
@@ -56,8 +56,8 @@ Data set: `Askin, Leon
 	Vader, Darth` <br>
 
 Solution: <br>
-Find: ´^\t([\w ]+), ([\w ]+)$´ <br>
-Replace: ´\t\2 \1´
+Find: `^\t([\w ]+), ([\w ]+)$` <br>
+Replace: `\t\2 \1`
  
 
 ### 2.2 Simple: Construct regular expressions that finds references all Austrian cities. <br>
