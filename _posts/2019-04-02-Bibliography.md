@@ -4,7 +4,7 @@ subtitle: Homework // L04 Citation management and academic writing
 ---
 
 <head>
-    <h1 id="introduction">Modeling: A Study in Words and Meanings" by Willard McCarty</h1>
+    <h1 id="introduction">Modeling: A Study in Words and Meanings by Willard McCarty</h1>
 </head>
 
 <blockquote>
