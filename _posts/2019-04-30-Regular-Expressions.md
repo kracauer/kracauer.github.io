@@ -8,7 +8,7 @@ Below you will find a data set and corresponding expressions, written with regul
 
 ### 1.1 What regular expression matches each of the following?<br>
 Data set: `“eat”, “eats”, “ate”, “eaten”, “eating”, “eater”, “eatery”`<br>
-Solution: `[ea]t?r?s?y?i?n?g?`
+Solution: `\b(eat(s|en)?|ate)\b`
 
 ### 1.2 Find all Qadhdhafis...<br>
 Data set: `Maummar Gaddafi, Moamar AI Kadafi, Moamar al-Gaddafi,
@@ -29,7 +29,7 @@ Data set: `Iṣbahān, Iṣfahān, Isbahan,
 	isfahan, esfāhān, esfahān,
 	esfahan, hispahan,` <br>
 
-Solution: ???
+Solution: ´\b()\b´
 
 ## Part 2
 
@@ -56,8 +56,8 @@ Data set: `Askin, Leon
 	Vader, Darth` <br>
 
 Solution: <br>
-Find: `\t(\w+), (\w+)?\n` <br>
-	Replace: ????
+Find: ´^\t([\w ]+), ([\w ]+)$´ <br>
+Replace: ´\t\2 \1´
  
 
 ### 2.2 Simple: Construct regular expressions that finds references all Austrian cities. <br>
@@ -78,7 +78,7 @@ Data set: `Major cities in Austria are as follows: Vienna, Graz, Linz,
 	Gänserndorf, Gerasdorf bei Wien, Ebreichsdorf, Bischofshofen,
 	Groß-Enzersdorf, Seekirchen am Wallersee, Sankt Andrä` <br>
 
-Solution: ???
+Solution: Connect all citynames with a pipe `|`
 
 ### 2.3 More Difficult: Construct regular expression that finds only cities from 1) Lower Austria; 2) Salzburg. <br>
 Data set: `Vienna (Vienna), Graz (Styria), Linz (Upper Austria),
@@ -120,7 +120,7 @@ Data set: `Vienna (Vienna), Graz (Styria), Linz (Upper Austria),
 	Seekirchen am Wallersee (Salzburg), Sankt Andrä (Carinthia)`
 
 Solution: <br>
-Find: `([\w -]+) \(Lower Austria\)\b`  OR <br>
+Find: `([\w -]+) \(Lower Austria\)\b`  AND <br>
 `\b([\w -]+) \(Salzburg\)`
 
 
