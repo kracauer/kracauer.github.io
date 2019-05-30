@@ -26,7 +26,7 @@ And look at some issues:
 A closer look at the page structure reveals three useful clues:
 1. There are not only two orange XML buttons, which display the output as XML, there is also a more inconspicuous direct link for download.
 
-<img src="/img/xml_version_download.png" />
+      <img src="/img/xml_version_download.png" />
 
 2. In addition, if you compare the download links of different isses, you can quickly see that they follow a pattern.
 
