@@ -37,8 +37,7 @@ These three observations we make use of to create a list of XML files to downloa
 ### 2. Downloading the links
 We go back to the home page of "The Daily Dispatch" and look at the source code. It already contains the links to all single issues from 1860 to 1865. We download the source and clean it with the regular expression `text\?doc[^"]+` from all unnecessary page elements. What remains are 1349 URLs, which we collect in a document.
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-text?doc=Perseus%3atext%3a2006.05.0001
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>text?doc=Perseus%3atext%3a2006.05.0001
 text?doc=Perseus%3atext%3a2006.05.0002
 text?doc=Perseus%3atext%3a2006.05.0003
 text?doc=Perseus%3atext%3a2006.05.0004
@@ -57,8 +56,7 @@ text?doc=Perseus%3atext%3a2006.05.1353
 
 Now it's almost done. In the comparison of the now received links to the XML-download, a detail is noticeable:
 Apart from the beginning, which can be added later (and As in upper and lower case, which doesn't matter for us), there is a missing <b>dl</b> in our current link list:
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
- www.perseus.tufts.edu/hopper/<b>dl</b>text?doc=Perseus%3Atext%3A2006.05.0001
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> www.perseus.tufts.edu/hopper/<b>dl</b>text?doc=Perseus%3Atext%3A2006.05.0001
                                 text?doc=Perseus%3atext%3a2006.05.0001
 </code></pre></div></div>
 
