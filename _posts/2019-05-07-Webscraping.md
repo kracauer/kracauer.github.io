@@ -43,7 +43,7 @@ text?doc=Perseus%3atext%3a2006.05.0003
 text?doc=Perseus%3atext%3a2006.05.0004
 text?doc=Perseus%3atext%3a2006.05.0154
 text?doc=Perseus%3atext%3a2006.05.0005
-\[...]
+[...]
 text?doc=Perseus%3atext%3a2006.05.1348
 text?doc=Perseus%3atext%3a2006.05.1349
 text?doc=Perseus%3atext%3a2006.05.1350
