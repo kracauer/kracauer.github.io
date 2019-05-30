@@ -22,12 +22,13 @@ First we have a look at the homepage of the archive of "The Daily Dispatch":
 And look at some issues:
 <img src="/img/the_daily_dispatch_issue1.png" />
 
-A closer look at the page structure reveals two useful clues:
+A closer look at the page structure reveals three useful clues:
 1. There are not only two orange XML buttons, which display the output as XML, there is also a more inconspicuous direct link for download.
 <img src="/img/xml_version_download.png" />
 
-2. if you click through further editions, you will quickly see that the URLs of the individual editions follow a pattern.
+2. In addition, if you compare the download links of different isses, you can quickly see that they follow a pattern.
 
+3. If you click through further editions, you will quickly see that the URLs of the individual issues also follow a pattern, which is very similar to the XML links.
 
 
 
