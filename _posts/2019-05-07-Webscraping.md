@@ -11,7 +11,7 @@ For this I need two commands:
 wget -i links.txt -P ./folderYouWantToSaveTo/ -nc 
 </code></pre></div></div>
 
-As we see in the first line, we first have to create a list of links that can then be downloaded by wget. For this we would have to go to the page of the journal and try to understand the structure of the page and its contents.
+As we see in the first line, we first have to create a list of links that can then be downloaded by wget. For this we have to go to the page of the journal and try to understand the structure of the page and its contents.
 
 ### 1. Recognizing the pattern
 
