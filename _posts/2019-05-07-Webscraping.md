@@ -58,7 +58,7 @@ text?doc=Perseus%3atext%3a2006.05.1353
 Now it's almost done. In the comparison of the now received links to the XML-download, a detail is noticeable:
 Apart from the beginning, which can be added later (and As in upper and lower case, which doesn't matter for us), there is a missing `dl` in our current link list:
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
- www.perseus.tufts.edu/hopper/`dl`text?doc=Perseus%3Atext%3A2006.05.0001
+ www.perseus.tufts.edu/hopper/<b>dl</b>text?doc=Perseus%3Atext%3A2006.05.0001
 (www.perseus.tufts.edu/hopper/)text?doc=Perseus%3atext%3a2006.05.0001
 </code></pre></div></div>
 
