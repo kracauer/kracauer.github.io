@@ -61,4 +61,7 @@ Apart from the beginning, which can be added later (and As in upper and lower ca
 </code></pre></div></div>
 
 Finally we add the prefix `www.perseus.tufts.edu/hopper/dl` to all our links and save the list in a common document.
+
 ### 4. Downloading the data
+
+With the wget and the commands given above we can now automated download all desired issues of "The Daily Dispatch".
