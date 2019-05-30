@@ -15,9 +15,9 @@ As we see in the first line, we first have to create a list of links that can th
 
 ### 1. Recognizing the pattern
 
-<img src="/img/the_daily_dispatch_issue1.png"/>
-<img src="/img/the_daily_dispatch_isssue1_xml.png"/>
-<img src="/img/the_daily_dispatch_homepage.png"/>
+<img src="/img/the_daily_dispatch_issue1.png" />
+<img src="/img/the_daily_dispatch_isssue1_xml.png" />
+<img src="/img/the_daily_dispatch_homepage.png" />
 
 
 
