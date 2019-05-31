@@ -2,7 +2,7 @@
 title: Webscraping
 subtitle: Homework // L07 Webscraping
 ---
-<i>Task: Scraping the “The Daily Dispatch”: download issues of “Richmond Times Dispatch” (Years 1860-1865, only!), which are available at: http://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:RichTimes)</i>
+<b>Task:</b> <i>Scraping the “The Daily Dispatch”: download issues of “Richmond Times Dispatch” (Years 1860-1865, only!), which are available at: http://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:RichTimes)</i>
 
 For the fulfillment of this task I use the program [wget](https://www.gnu.org/software/wget/). It allows me to automate the downloading of web content by giving the URL.
 For this I need two commands:
