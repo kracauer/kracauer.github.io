@@ -1,5 +1,5 @@
 ---
-title: Python Achievements #3
+title: Python Achievements \#3
 subtitle: Homework // L06
 ---
 
