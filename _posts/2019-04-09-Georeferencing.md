@@ -2,6 +2,15 @@
 title: Georeferencing
 subtitle: Homework // L05 Georeferencing with QGIS
 ---
+<b>Task 1:</b>
+<i>Georeference two of three offered maps of the US during the Civil War;</i>
+
+<b>Task 2:</b>
+<i>Collect coordinates for 20 place names from each map (into a CSV format: use the same structure as given above).</i>
+
+<b>Task 3:</b>
+<i>Prepare a blogpost on your website with screenshots of both maps and paste the content of your CSV files below each map.</i>
+
 
 Two historical maps of the USA, georeferenced with [QGIS](https://www.qgis.org/en/site/) and each equipped with the locations of 20 cities. The exact location data is listed under the maps.
 
