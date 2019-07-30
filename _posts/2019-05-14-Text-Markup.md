@@ -28,14 +28,15 @@ for f in listOfFiles:
      # creates, opens and fills processed file
      with open(newfile, "w", encoding="utf8") as f9:
          f9.write(text)
-</code></pre></div></div>
+```
 
 <b>Task 1b:</b>
 <i>Cleaning the “Dispatch”: write a python script that will create clean copies of articles (!) from all issues of the “Dispatch”. (again, make sure to keep the originals intact!).</i>
 
 Note: For the script the library of "Beautiful Soup 4" is used to efficiently recognize XML elements.
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from bs4 import BeautifulSoup
+```python
+from bs4 import BeautifulSoup
 import re
 import os
 pathToFolder = "Directory in which the dataset of the "Daily Dispatch" is located"
