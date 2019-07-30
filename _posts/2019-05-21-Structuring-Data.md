@@ -10,6 +10,8 @@ subtitle: Homework // L09 Structuring Data
   <li><i>the text of an entry</i></li>
 </ol>
 
+<b>Solution:</b>
+
 ```python
 import re, os, csv, json
 
@@ -95,5 +97,5 @@ with open('dipatch.csv', 'w', encoding="utf8") as f:
 with open("dispatch.json", "w", encoding="utf8") as f:
     json.dump(list, f)
 
-
 ```
+
