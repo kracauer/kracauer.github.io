@@ -8,6 +8,29 @@ The following steps refer to the "Daily Dispatch" dataset that we webscraped wit
 <b>Task 1a:</b>
 <i>Cleaning the “Dispatch”: write a python script that will create clean copies of text from each issue of the “Dispatch” that you scraped before (make sure to keep the originals intact!).</i>
 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import re
+import os
+pathToFolder = "Directory in which the dataset of the "Daily Dispatch" is located"
+newPathToFolder = "Directory where the modified dataset is to be stored"
+
+listOfFiles = os.listdir(pathToFolder)
+
+# creates a for loop to open each file of a folder
+for f in listOfFiles:
+  with open(pathToFolder+f, "r", encoding="utf8") as f1:
+     data = f1.read()
+     # removes all the xml markup from each file and stores it in a variable
+     text = re.sub("&lt;[^&lt;]+&gt;","", data)
+     # creates a new file with modified.txt extention
+     newfile = pathToFolder+f + "_modified.txt"
+     # opens each files and writes the content stored in text
+     with open(newfile, "w", encoding="utf8") as f9:
+         f9.write(text)
+</code></pre></div></div>
+
+<b>Task 1b:</b>
+<i>Cleaning the “Dispatch”: write a python script that will create clean copies of articles (!) from all issues of the “Dispatch”. (again, make sure to keep the originals intact!).</i>
+
 Note: For the script the library of "Beatiful Soup 4" is used to efficiently recognize HTML elements.
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from bs4 import BeautifulSoup
@@ -40,8 +63,7 @@ for f in listOfFiles:
             f9.write(article)
 </code></pre></div></div>
 
-<b>Task 1b:</b>
-<i>Cleaning the “Dispatch”: write a python script that will create clean copies of articles (!) from all issues of the “Dispatch”. (again, make sure to keep the originals intact!).</i>
+
 
 
 
