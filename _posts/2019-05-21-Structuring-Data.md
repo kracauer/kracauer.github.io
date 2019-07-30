@@ -7,6 +7,6 @@ subtitle: Homework // L09 Structuring Data
   <li>date</li>
   <li>type of an entry (there are articles, advertisements, notices, etc.)</li>
   <li>header</li>
-  <li>the text of an entry</li></i>
+  <li>the text of an entry</li>
   </ol>
 
