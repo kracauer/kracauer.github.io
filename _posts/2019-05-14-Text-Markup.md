@@ -13,8 +13,9 @@ Note: For the script the library of "Beatiful Soup 4" is used to efficiently rec
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from bs4 import BeautifulSoup
 import re
 import os
-newPathToFolder = "~/Documents/Dh_Tools/lesson8/articles_try_2/"
-pathToFolder = "~/Documents/Dh_Tools/lesson7/4th/"
+pathToFolder = "Directory in which the dataset of the "Daily Dispatch" is located"
+newPathToFolder = "Directory where the modified dataset is to be stored"
+
 listOfFiles = os.listdir(pathToFolder)
 
 # for loop that opens all files of a defined folder and stores it with BeautifulSoup in variable soup
