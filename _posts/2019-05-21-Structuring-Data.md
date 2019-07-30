@@ -12,7 +12,7 @@ subtitle: Homework // L09 Structuring Data
 
 <b>Solution:</b>
 
-Note: The Pyhton script uses json and chooses csv (comma-separated values) instead of the proposed tsv (tab-separated values).
+???Note: The Pyhton script uses json and chooses csv (comma-separated values) instead of the proposed tsv (tab-separated values).??? /t = tab = tsv
 
 ```python
 import re, os, csv, json
