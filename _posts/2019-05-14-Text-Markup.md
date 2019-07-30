@@ -8,7 +8,8 @@ The following steps refer to the "Daily Dispatch" dataset that we webscraped wit
 <b>Task 1a:</b>
 <i>Cleaning the “Dispatch”: write a python script that will create clean copies of text from each issue of the “Dispatch” that you scraped before (make sure to keep the originals intact!).</i>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import re
+```python
+import re
 import os
 pathToFolder = "Directory in which the dataset of the "Daily Dispatch" is located"
 newPathToFolder = "Directory where the modified dataset is to be stored"
@@ -67,7 +68,7 @@ for f in listOfFiles:
         # creates and opens new file and appends the parsed text
         with open(newfile, "w", encoding="utf8") as f9:
             f9.write(article)
-</code></pre></div></div>
+```
 
 
 
