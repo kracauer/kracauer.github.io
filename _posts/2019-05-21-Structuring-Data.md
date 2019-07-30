@@ -12,61 +12,63 @@ subtitle: Homework // L09 Structuring Data
 
 <b>Solution:</b>
 
-???Note: The Pyhton script uses json and chooses csv (comma-separated values) instead of the proposed tsv (tab-separated values).??? /t = tab = tsv
+The following code excerpt identifies the searched HTML tags from all existing articles and then creates three files: a CSV file, a TSV file, and a JSON object.
 
 ```python
 import re, os, csv, json
 
-source = "C:/Users/bkoschicek/Desktop/tnt/dispatch/dispatch-small/"
-#target = "C:/Users/bkoschicek/Desktop/tnt/dispatch/dispatch/modified/"
+source = "Directory of given files"
 
 lof = os.listdir(source)
-counter = 0 # general counter to keep track of the progress
+counter = 0 
 
-# a list to hold all the dictionaries
+# declaration of list
 list = []
 
+# starts loop over all given files
 for f in lof:
-    if f.startswith("dltext"): # fileName test
+    if f.startswith("dltext"):
         with open(source + f, "r", encoding="utf8") as f1:
             text = f1.read()
 
-            # try to find the date
+            # searches for the second date tag
             date = re.search(r'<date value="([\d-]+)"', text).group(1)
 
-            # splitting the issue into articles/items
+            # splits each div3 container
             split = re.split("<div3 ", text)
 
-            c = 0 # item counter
+            c = 0 
+
+            # starts loop over all containers
             for s in split[1:]:
                 c += 1
-                s = "<div3 " + s # a step to restore the integrity of items
-                #input(s)
+                # restores the text from the split function
+                s = "<div3 " + s 
 
-                # try to find a unitType, if not then there will bei "noType"
+                # tries to find the type tag
                 try:
                     unitType = re.search(r'type="([^\"]+)"', s).group(1)
+                # catches exception from search function and assigns "noType"
                 except:
                     unitType = "noType"
-                    print(s)
-
-                # try to find a header, if not then there will be "NO HEADER"
+                    
+                # tries to find a header
                 try:
                     header = re.search(r'<head>(.*)</head>', s).group(1)
                     header = re.sub("<[^<]+>", "", header)
+                # catches exceptions and assigns "NO HEADER"
                 except:
                     header = "NO HEADER"
-                    print("\nNo header found!\n")
 
-                # cleaing the file of all the tags
+                # cleans up the text
                 text = re.sub("<[^<]+>", "", s)
                 text = re.sub(" +\n|\n +", "\n", text)
                 text = re.sub("\n+", ";;; ", text)
 
-                # generating necessary bits
+                # generates unique identifier
                 fName = date+"_"+unitType+"_"+str(c)
 
-                # creating a dictionary with all the needed entries
+                # sets the dictionary values
                 dict = {
                     'id': fName,
                     'date': date,
@@ -74,29 +76,34 @@ for f in lof:
                     'header': header,
                     'text': text
                 }
-                # appending the dict to a list
+                # appends dictionary to dictionary list
                 list.append(dict)
 
-## Writing the whole thing
-# column header names for the csv/tsv
+# creates list of dictionary keys
 csv_columns =  ['id', 'date', 'type', 'header', 'text']
 
-# writing tsv with the csv library
-with open('dipatch.tsv', 'w', encoding="utf8") as f:
-    writer = csv.DictWriter(f, delimiter ='\t',fieldnames=csv_columns)
+# creates and opens tsv file
+with open('dispatch.tsv', 'w', encoding = "utf8") as f:
+    # gets writer object from csv library
+    writer = csv.DictWriter(f, delimiter ='\t',fieldnames = csv_columns)
+    # writes header into file
     writer.writeheader()
+    # writes data into file by each line
     for data in list:
         writer.writerow(data)
 
-# writing csv with the csv library
-with open('dipatch.csv', 'w', encoding="utf8") as f:
-    writer = csv.DictWriter(f,fieldnames=csv_columns)
+# creates and opens csv file
+with open('dispatch.csv', 'w', encoding = "utf8") as f:
+    # gets writer object from csv library
+    writer = csv.DictWriter(f,fieldnames = csv_columns)
+    # writes header into file
     writer.writeheader()
+    # writes data into file by each line
     for data in list:
         writer.writerow(data)
 
-# writing json with the jason library
-with open("dispatch.json", "w", encoding="utf8") as f:
+# and here's how all of it looks with json
+with open("dispatch.json", "w", encoding = "utf8") as f:
     json.dump(list, f)
 
 ```
