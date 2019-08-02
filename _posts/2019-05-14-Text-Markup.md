@@ -10,6 +10,7 @@ The following steps refer to the "Daily Dispatch" dataset that we webscraped wit
 
 ### Solution 1a
 
+
 ```python
 import re
 import os
