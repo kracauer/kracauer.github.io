@@ -10,7 +10,7 @@ subtitle: Homework // L09 Structuring Data
   <li><i>the text of an entry</i></li>
 </ol>
 
-<b>Solution 1:</b> Reformatting the Data
+### Solution 1: Reformatting the Data
 
 The following code excerpt identifies the searched HTML tags from all existing articles and then creates three files: a CSV file, a TSV file, and a JSON object.
 
