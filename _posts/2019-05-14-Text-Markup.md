@@ -8,6 +8,8 @@ The following steps refer to the "Daily Dispatch" dataset that we webscraped wit
 <b>Task 1a:</b>
 <i>Cleaning the “Dispatch”: write a python script that will create clean copies of text from each issue of the “Dispatch” that you scraped before (make sure to keep the originals intact!).</i>
 
+### Solution 1a
+
 ```python
 import re
 import os
@@ -35,6 +37,8 @@ for f in listOfFiles:
 
 <b>Task 1b:</b>
 <i>Cleaning the “Dispatch”: write a python script that will create clean copies of articles (!) from all issues of the “Dispatch”. (again, make sure to keep the originals intact!).</i>
+
+### Solution 1b
 
 Note: For the script the library of "Beautiful Soup 4" is used to efficiently recognize XML elements.
 
@@ -83,9 +87,3 @@ for f in listOfFiles:
         with open(newfile, "w", encoding="utf8") as f9:
             f9.write(article)
 ```
-
-
-
-
-
-
