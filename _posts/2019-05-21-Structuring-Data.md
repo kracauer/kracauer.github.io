@@ -34,20 +34,21 @@ for f in lof:
             # searches for the second date tag
             date = re.search(r'<date value="([\d-]+)"', text).group(1)
 
-            # splits each div3 container
+            # splits each "div3" container
             split = re.split("<div3 ", text)
-
             c = 0 
 
             # starts loop over all containers
             for s in split[1:]:
                 c += 1
+                
                 # restores the text from the split function
                 s = "<div3 " + s 
 
                 # tries to find the type tag
                 try:
                     unitType = re.search(r'type="([^\"]+)"', s).group(1)
+                    
                 # catches exception from search function and assigns "noType"
                 except:
                     unitType = "noType"
@@ -76,33 +77,40 @@ for f in lof:
                     'header': header,
                     'text': text
                 }
+                
                 # appends dictionary to dictionary list
                 list.append(dict)
 
 # creates list of dictionary keys
 csv_columns =  ['id', 'date', 'type', 'header', 'text']
 
-# creates and opens tsv file
+# creates and opens TSV file
 with open('dispatch.tsv', 'w', encoding = "utf8") as f:
-    # gets writer object from csv library
+    
+    # gets writer object from CSV library
     writer = csv.DictWriter(f, delimiter ='\t',fieldnames = csv_columns)
+    
     # writes header into file
     writer.writeheader()
+    
     # writes data into file by each line
     for data in list:
         writer.writerow(data)
 
-# creates and opens csv file
+# creates and opens CSV file
 with open('dispatch.csv', 'w', encoding = "utf8") as f:
-    # gets writer object from csv library
+    
+    # gets writer object from CSV library
     writer = csv.DictWriter(f,fieldnames = csv_columns)
+    
     # writes header into file
     writer.writeheader()
+    
     # writes data into file by each line
     for data in list:
         writer.writerow(data)
 
-# and here's how all of it looks with json
+# and here's how all of it looks with JSON
 with open("dispatch.json", "w", encoding = "utf8") as f:
     json.dump(list, f)
 
