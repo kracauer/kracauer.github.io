@@ -6,11 +6,11 @@ subtitle: Homework // L12 Topic Modeling
 <b>Task 2:</b> <i>Change the number of topics to 30 and compare new results with the results for 40 topics. Record your observations.</i><br>
 <b>Task 3:</b> <i>Publish your observations as a blogpost on your website; compare your results with those of Rob Nelson’s Mining the Dispatch (http://dsl.richmond.edu/dispatch/).</i><br>
 
-# Solution 1: Running the Model
+## Solution 1: Running the Model
 
 In order to get the script to work, some libraries are needed, which can be downloaded with the command `pip install nltk gensim spacy pyLDAvis matplotlib numpy pandas plotly pprint` in one go.
 
-# Solution 2: Running the Script with Different Numbers of Topics
+## Solution 2: Running the Script with Different Numbers of Topics
 
 The number of topics to be generated is set in lines 32 to 35. Here it is important to note that the desired number of topics in all lines must be adjusted manually. 
 
