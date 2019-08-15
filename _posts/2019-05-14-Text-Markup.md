@@ -9,7 +9,7 @@ The following steps refer to the "Daily Dispatch" dataset that we webscraped wit
 <i>Cleaning the “Dispatch”: write a python script that will create clean copies of text from each issue of the “Dispatch” that you scraped before (make sure to keep the originals intact!).</i>
 
 ### Solution 1a
-#
+
 ```python
 import re
 import os
