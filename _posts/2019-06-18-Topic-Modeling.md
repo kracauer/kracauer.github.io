@@ -10,7 +10,7 @@ subtitle: Homework // L12 Topic Modeling
 
 In order to get the script to work, some libraries are needed, which can be downloaded with the command `pip install nltk gensim spacy pyLDAvis matplotlib numpy pandas plotly pprint` in one go.
 
-# Solution 2: Running the Script with Different Number of Topics
+## Solution 2: Running the Script with Different Number of Topics
 
 The number of topics to be generated is set in lines 32 to 35. Here it is important to note that the desired number of topics in all lines must be adjusted manually. 
 
