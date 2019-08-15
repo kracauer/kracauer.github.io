@@ -30,3 +30,9 @@ The generated topics look as follows.
 
 ### 40 Topics
 <img src="/img/40.png"/>
+
+### Observations:
+In contrast to T30 and T40, the graphs for T20 are much closer to each other, so the topics generated seem denser in themselves, i.e. more congruent. Interestingly, T30 has the strongest outbreaks, whereas T40 seems to form more congruent topics.
+
+From the end of August 1864, T20 shows a particularly high density of recurring themes dominated by concepts of the money economy. In 1864, the (Un)United States of America were in the third of four years of civil war. From the end of the year onwards, it can be read from the data that there seem to have been more calls to finance the war. 
+`Bonds` and `certificates` in particular seem to have played a role in this. It is also interesting to note that the unit of currency `cent` appears but not the dollar, which could stand for the focus on smaller amounts of money. According to the ["Inflation Calculator"](http://www.in2013dollars.com/us/inflation/1864?amount=1), 1 dollar in 1865 today equals 16.34 dollars.
