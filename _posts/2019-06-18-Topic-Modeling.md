@@ -18,7 +18,7 @@ The number of topics to be generated is set in lines 32 to 35. Here it is import
 
 In the example image, the number of topics is set to 30 and is applied to the year 1864 of the "Dispatch".
 
-It is important to note that the running time of the script is significantly extended with each topic increase, which is especially relevant for low-performance computers. For me, the calculation of 20 topics only takes a few minutes, whereas 30 takes half an hour and 40 over 60 minutes.
+It is also important to know that the running time of the script is significantly extended with each topic increase, which is especially relevant for low-performance computers. For me, the calculation of 20 topics only takes a few minutes, whereas 30 takes half an hour and 40 over 60 minutes.
 
 The generated topics look as follows.
 
